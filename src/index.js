@@ -1,9 +1,9 @@
- import React from 'react';
+ import React, { Component } from 'react';
  import ReactDOM from 'react-dom';
  import SearchBar from './components/search_bar';
  import YTSearch from 'youtube-api-search';
 
-const API_KEY = 'AIzaSyCmGUG5gvTFrOpCvc4udijeT9hl_Ug9HP4'; 
+const API_KEY = 'AIzaSyDHAu4TSVyf5OCnsSAAG4QzmPwHi1g0rUQ'; 
 
 class App extends Component {
     constructor(props){
@@ -15,13 +15,14 @@ class App extends Component {
             this.setState({ videos });
         });
     }
+
     render() {
         return (
             <div>
-                <SearchBar/>
+                <SearchBar />
             </div>
         );
     }
 }
 
-ReactDOM.render(<App/>, document.querySelector('.container'));
+ReactDOM.render(<App />, document.querySelector('.container'));
